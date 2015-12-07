@@ -1,0 +1,9 @@
+---
+skills:
+- id: 1
+  title: drinkin beer
+  description: i drink beer good
+- id: 2
+  title: chewin gum
+  description: i chew the loudest
+total: 3

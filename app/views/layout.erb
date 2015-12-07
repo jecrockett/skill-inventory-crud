@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel="stylesheet" href="/application.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Skill Inventory</title>
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper blue">
+        <a href="http://localhost:9393/skills" class="brand-logo">Skill Inventory</a>
+        <ul id="nav-mobile" class="right hide-on-small-only">
+          <li><a href="http://localhost:9393/skills">Skills</a></li>
+          <li><a href="http://localhost:9393/skills/new">Create Skill</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <%= yield %>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+  </body>
+</html>

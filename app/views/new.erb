@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="skill-form" class="card grey lighten-5 z-depth-2">
+    <div class="center-align">
+      <h3 class="form-title">Add a Skill</h3>
+    </div>
+
+    <form action="/skills" method="post">
+      <div class="input-field">
+        <label class="active" for="skill-title">Skill Title</label>
+        <input id="skill-title" type="text" name="skill[title]">
+      </div>
+      <br/>
+      <div class="input-field">
+        <label class="active" for="skill-description">Skill Description</label><br/>
+        <textarea id="skill-description" type="text" name="skill[description]"></textarea>
+      </div>
+      <br/>
+      <div class="center-align">
+        <input id="submit-button" class="btn waves-effect" type="submit"/>
+      </div>
+    </form>
+  </div>
+</div>

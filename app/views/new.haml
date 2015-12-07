@@ -1,0 +1,16 @@
+.container
+  .card.grey.lighten-5.z-depth-2
+    .center-align
+      %h3.form-title Add a Skill
+    %form{:action => "/skills", :method => "post"}
+      .input-field
+        %label.active{:for => "skill-title"} Skill Title
+        %input#skill-title{:name => "skill[title]", :type => "text"}
+      %br/
+      .input-field
+        %label.active{:for => "skill-description"} Skill Description
+        %br/
+        %textarea#skill-description{:name => "skill[description]", :type => "text"}
+      %br/
+      .center-align
+        %input#submit-button.btn.waves-effect{:type => "submit"}/

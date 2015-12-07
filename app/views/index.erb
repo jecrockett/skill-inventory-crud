@@ -1,0 +1,18 @@
+<div class="container">
+  <div id ="skills-index" class="card z-depth-2">
+    <h1 class="center-align">My Skills</h1>
+
+    <div>
+      <% @skills.each do |skill| %>
+        <p>
+          <%= skill.id %>: <a id="skill-link" href="/skills/<%= skill.id %>"><%= skill.title %></a>
+        </p>
+        <a href="/skills/<%= skill.id %>/edit">Edit</a>
+        <form action="/skills/<%= skill.id %>" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="Delete">
+        </form>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.container
+  .skill-form.card.grey.lighten-5.z-depth-2
+    .center-align
+      %h3.form-title Edit your Skill:
+
+    %form{:action => "/skills/#{@skill.id}", :method => "post"}
+      %input{:type => "hidden", :name =>"_method", :value => "put"}
+      .input-field
+        %label.active{:for => "skill-title"} Skill title
+        %input#skill-title{:type => "text", :name => "skill[title]", :value => "#{@skill.title}"}
+      %br/
+      .input-field
+        %label.active{:for => "skill-description"} Skill Description
+        %textarea#skill-description{:type => "text", :name => "skill[description]"}= @skill.description
+      %br/
+      .center-align
+        %input#submit-button.btn.waves-effect{:type => "submit"}/

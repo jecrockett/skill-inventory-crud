@@ -1,0 +1,13 @@
+.container
+  #skills-index.card.z-depth-2
+    %h1.center-align My Skills
+    %div
+      - @skills.each do |skill|
+        %p
+          = skill.id
+          \:
+          %a#skill-link{:href => "/skills/#{skill.id}"}= skill.title
+        %a{:href => "/skills/#{skill.id}/edit"} Edit
+        %form{:action => "/skills/#{skill.id}", :method => "post"}
+          %input{:type => "hidden", :name =>"_method", :value => "delete"}
+          %input{:type => "submit", :value => "Delete"}
